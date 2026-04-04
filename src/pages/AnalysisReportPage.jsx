@@ -159,7 +159,7 @@ export default function AnalysisReportPage() {
 
         {/* Footer note */}
         <div className="mt-10 p-4 rounded-xl text-sm" style={{ background: '#eee', color: '#666' }}>
-          <strong>About this report:</strong> TruthCheck AI Analysis uses automated content screening cross-referenced against reputable news sources (Reuters, BBC, AP, gov.sg, WHO). Analysis reports are for informational purposes and should not be the sole basis for any decision.
+          <strong>About this report:</strong> TruthCheck AI Analysis uses Gemini Pro 3 to automate content screening cross-referenced against reputable news sources (Reuters, BBC, AP, gov.sg, WHO). Analysis reports are for informational purposes and should not be the sole basis for any decision.
         </div>
       </div>
     </div>
