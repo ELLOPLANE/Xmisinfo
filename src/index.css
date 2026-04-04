@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #16181c;
+  --bg-card: #1e2028;
+  --bg-hover: #1a1d24;
+  --border: #2f3336;
+  --text-primary: #e7e9ea;
+  --text-secondary: #71767b;
+  --blue: #1d9bf0;
+  --blue-hover: #1a8cd8;
+  --green: #00ba7c;
+  --amber: #f4900c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 999px;
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-down {
+  animation: slideDown 0.25s ease-out;
+}
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to   { opacity: 1; max-height: 600px; }
+}
+
+.pulse-badge {
+  animation: pulseBadge 2s infinite;
+}
+@keyframes pulseBadge {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(244, 144, 12, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(244, 144, 12, 0); }
+}
+
+.btn-quiz {
+  transition: all 0.15s ease;
+}
+.btn-quiz:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(29, 155, 240, 0.3);
+}
+.btn-quiz:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.progress-bar-fill {
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.avatar-option {
+  transition: all 0.15s ease;
+}
+.avatar-option:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 2px var(--blue);
+}
+.avatar-option.selected {
+  box-shadow: 0 0 0 3px var(--blue);
+  transform: scale(1.05);
+}
+
+/* Report page */
+.report-body {
+  font-family: 'Merriweather', Georgia, serif;
+}
