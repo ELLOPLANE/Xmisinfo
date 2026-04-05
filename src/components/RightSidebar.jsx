@@ -11,7 +11,7 @@ const LEADERBOARD_TOP = [
 ];
 
 const LEADERBOARD_LIST = [
-  { id: 4, name: 'Alexandre L.', score: 80, level: 3 },
+  { id: 4, name: 'Alexandre L.', score: 80, level: 4 },
   { id: 5, name: 'Kimberley J.', score: 66, level: 3 },
   { id: 6, name: 'Jenny K.', score: 66, level: 3 },
   { id: 7, name: 'Amanda H.', score: 59, level: 2 },
@@ -96,7 +96,7 @@ export default function RightSidebar() {
 
         <div className="flex items-center gap-2 text-xs rounded-xl py-2 px-3"
           style={{ background: '#1e2028', color: '#71767b' }}>
-          <span>🔄</span>
+          
           <span>Quarterly reset in <strong style={{ color: '#e7e9ea' }}>{daysLeft} days</strong> ({resetLabel})</span>
         </div>
       </div>
